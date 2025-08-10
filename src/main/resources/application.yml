@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: oauth2RegLgn
+  security:
+    user:
+      name: abc
+      password: 123
