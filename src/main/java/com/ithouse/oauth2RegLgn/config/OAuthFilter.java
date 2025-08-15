@@ -22,10 +22,9 @@ class OAuthFilter {
                 )
                 .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
-//                .oauth2Login(oauth-> oauth.loginPage("/oauth2/authorization/google")
-//                        .defaultSuccessUrl("/home", true))
-                .cors(Customizer.withDefaults())
-                .csrf(AbstractHttpConfigurer::disable)
+                .oauth2Login(Customizer.withDefaults())
+//                .cors(Customizer.withDefaults())
+//                .csrf(AbstractHttpConfigurer::disable)
 //                .csrf(Customizer.withDefaults())
 //                .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .build();
