@@ -21,7 +21,7 @@ class OAuthFilter {
                                 .authenticated()
                 )
                 .formLogin(Customizer.withDefaults())
-                .httpBasic(Customizer.withDefaults())
+//                .httpBasic(Customizer.withDefaults())
                 .oauth2Login(Customizer.withDefaults())
 //                .cors(Customizer.withDefaults())
 //                .csrf(AbstractHttpConfigurer::disable)

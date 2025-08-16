@@ -16,15 +16,19 @@ spring:
               - profile
               - email
             redirect-uri: http://localhost:8080/user
-          github:
-            client-id: ${YOUR_GITHUB_CLIENT_ID}
-            client-secret: YOUR_GITHUB_CLIENT_SECRET
-            scope:
-              - read:user
-              - user:email
-        provider:
-          github:
-            authorization-uri: https://github.com/login/oauth/authorize
-            token-uri: https://github.com/login/oauth/access_token
-            user-info-uri: https://api.github.com/user
-            user-name-attribute: ${id}
+#          github:
+#            client-id: ${YOUR_GITHUB_CLIENT_ID}
+#            client-secret: YOUR_GITHUB_CLIENT_SECRET
+#            scope:
+#              - read:user
+#              - user:email
+#        provider:
+#          github:
+#            authorization-uri: https://github.com/login/oauth/authorize
+#            token-uri: https://github.com/login/oauth/access_token
+#            user-info-uri: https://api.github.com/user
+#            user-name-attribute: ${id}
+  config:
+    import: classpath:env.yml
+
+
